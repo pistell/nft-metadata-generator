@@ -111,3 +111,12 @@ echo 'export PATH="~/.local/bin:$PATH"' >> ~/.bashrc
 echo 'export NODE_HOME="$HOME/node"' >> ~/.bashrc
 # echo 'export CARDANO_NODE_SOCKET_PATH="$HOME/testnet-node/socket/node.socket"' >> ~/.bashrc
 echo 'export CARDANO_NODE_SOCKET_PATH="$HOME/node/socket/node.socket"' >> ~/.bashrc
+
+# run script via "bash init.sh"
+# If cardano-node is not a found command then you need to run the following
+# sudo cp $(find $HOME/git/cardano-node/dist-newstyle/build -type f -name "cardano-cli") /usr/local/bin/cardano-cli
+# sudo cp $(find $HOME/git/cardano-node/dist-newstyle/build -type f -name "cardano-node") /usr/local/bin/cardano-node
+# verify by the following commands
+# cardano-node version
+# cardano-cli version
+
